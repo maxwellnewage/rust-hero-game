@@ -2,17 +2,17 @@ use serde::Deserialize;
 
 #[derive(Debug, Deserialize)]
 pub struct Owner {
-    id: i32,
-    is_author: bool,
-    username: String,
+    pub id: i32,
+    pub is_author: bool,
+    pub username: String,
 }
 
 #[derive(Debug, Deserialize)]
 pub struct Player {
-    hp: i32,
-    id: i32,
-    money: i32,
-    name: String,
-    score: i32,
-    owner: Owner
+    pub hp: i32,
+    pub id: i32,
+    pub money: i32,
+    pub name: String,
+    pub score: i32,
+    pub owner: Owner
 }
